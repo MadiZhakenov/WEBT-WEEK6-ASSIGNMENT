@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br><br>
+            
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+            
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <br><br>
+            
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" class="my-2" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <form>
+        <label for="numbers">Enter Numbers: </label>
+        <br><br>
+        <input type="text" id="numbers" required>
+        <br><br>
+        <select id="order">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <button type="button" onclick="sortNumbers()">Sort</button>
+    </form>
+    <p id="sortNumbersText"></p>
+
+    <br><br>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+
+    <br><br>
+    <h1>Current Date and Time</h1>
+    <p id="dateTime"></p>
+    <script src="script.js"></script>
+</body>
+</html>
