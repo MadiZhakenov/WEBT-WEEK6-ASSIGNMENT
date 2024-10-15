@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuoso | Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">Virtuoso</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                    aria-expanded="false"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="active">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="booking-form-container mt-4">
+        <h3 class="section-heading text-center">Get in Touch with Us</h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-details p-4 mt-2">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:info@virtuoso.com">info@virtuoso.com</a></p>
+                    <p>Phone: +7 (705) 113-4567</p>
+                    <p>Address: 123 Music Avenue, Astana, Kazakhstan</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="contact-form-container p-4 mt-2">
+                    <div class="container text-center">
+                        <h4>Contact Form</h4>
+                    </div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required
+                                placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required
+                                placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary custom-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-form-container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="container text-center">
+                    <div class="contact-details p-4 mt-2">
+                        <form onsubmit="return validateForm()" id="contact-form">
+                            <div class="form-group">
+                                <label for="email1">Email:</label>
+                                <input class="form-control" type="text" id="email1" name="email1">
+                            </div>
+                            <div class="form-group">
+                                <label for="password1">Password:</label>
+                                <input class="form-control" type="password" id="password1" name="password1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword1">Confirm Password:</label>
+                                <input class="form-control" type="password" id="confirmPassword1" name="confirmPassword1">
+                            </div>
+                            
+                            <button class="btn btn-primary custom-button" type="submit">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-2">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" class="my-2" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+        <ul class="list-unstyled" id="taskList"></ul>
+    </div>
+
+    <div class="container text-center mt-2">
+        <form>
+            <label for="numbers"><h1>Enter Numbers: </h1></label>
+            <br>
+            <input type="text" id="numbers" required>
+            <br>
+            <br>
+            <select id="order">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button type="button" onclick="sortNumbers()">Sort</button>
+        </form>
+        <p id="sortNumbersText"></p>
+    </div>
+
+    <div class="container mt-4 text-center">
+        <button class="btn btn-lg btn-danger" onclick="changeBackgroundColor()">Change Background Color</button>
+    </div>
+
+    <div class="container text-center mt-4">
+        <h1>Current Date and Time</h1>
+        <p id="dateTime"></p>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-4 mt-4 mt-lg-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Virtuoso | All Rights Reserved</p>
+            <p class="mb-0">Madi Zhakenov</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

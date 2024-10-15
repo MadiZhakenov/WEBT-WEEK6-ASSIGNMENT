@@ -1,7 +1,7 @@
 function validateForm() {
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var confirmPassword = document.getElementById('confirmPassword').value;
+    var email = document.getElementById('email1').value;
+    var password = document.getElementById('password1').value;
+    var confirmPassword = document.getElementById('confirmPassword1').value;
 
     if (!email || !password || !confirmPassword) {
         alert('All fields are required!');
@@ -41,7 +41,7 @@ function addTask(){
     var completeBtn = document.createElement('button');
     completeBtn.style.marginLeft = '10px';
     completeBtn.style.marginRight = '2px';
-    completeBtn.textContent = '✓';
+    completeBtn.textContent = 'Done';
     completeBtn.addEventListener('click', function() {
         if(listItem.style.textDecoration == 'line-through'){
             listItem.style.textDecoration = 'none';
@@ -52,7 +52,7 @@ function addTask(){
     });
     
     var deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'X';
+    deleteBtn.textContent = 'Remove';
     deleteBtn.addEventListener('click', function() {
         listItem.remove();
     });
@@ -103,6 +103,58 @@ function updateDateTime(){
     }
     else{
         partHour = 'AM';
+    }
+
+    if(minutes < 10){
+        minutes = '0' + minutes;
+    }
+    if(hours < 10){
+        hours = '0' + hours;
+    }
+    if(day < 10){
+        day = '0' + day;
+    }
+    if(year < 10){
+        year = '0' + year;
+    }
+
+    switch(month){
+        case 1:
+            month = 'January';
+            break;
+        case 2:
+            month = 'February';
+            break;
+        case 3:
+            month = 'March';
+            break;
+        case 4:
+            month = 'April';
+            break;
+        case 5:
+            month = 'May';
+            break;
+        case 6:
+            month = 'June';
+            break;
+        case 7:
+            month = 'July';
+            break;
+        case 8:
+            month = 'August';
+            break;
+        case 9:
+            month = 'September';
+            break;
+        case 10:
+            month = 'October';
+            break;
+        case 11:
+            month = 'November';
+            break;
+        case 12:
+            month = 'December';
+            break;
     }
 
 
