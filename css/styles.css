@@ -1,1 +1,136 @@
+body{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+}
 
+header{
+    font-size: 18px;
+}
+
+footer{
+    font-size: 18px;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: scale-down;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(50%);
+}
+
+
+.product-item-link{
+    text-decoration: none;
+    color: #333
+}
+.product-item-link:hover{
+    text-decoration: none;
+    color: #3498db
+}
+
+.card-img-top {
+    width: 80%;
+}
+
+.product-cost{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    background-color: #3498db;
+    height: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+}
+.nav-link:hover{
+    text-decoration: none;
+}
+
+.main-section{
+    padding: 100px 20px;
+}
+
+.main-section h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.main-section p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-heading{
+    font-size: 32px;
+}
+
+.product-item-image{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contact-details, .contact-form-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-details h4, .contact-form-container h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.contact-details p, .contact-details a {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.custom-button{
+    width: 100%;
+}
+
+#message{
+    resize: none;
+}
